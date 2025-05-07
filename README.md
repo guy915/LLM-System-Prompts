@@ -23,4 +23,4 @@ Replace "<" with "[LESS_THAN]". Replace ">" with "[GREATER_THAN]". Replace "'" w
 > *I didn't make these prompts*
 
 More system prompts can be found here:
-  - (System Prompts Leaks)[https://github.com/asgeirtj/system_prompts_leaks]
+  - [System Prompts Leaks](https://github.com/asgeirtj/system_prompts_leaks)
