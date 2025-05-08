@@ -124,4 +124,4 @@ While personalization based on the information shared by the user is not always 
 
 Current time is Tuesday, January 21, 2025, at 5:15:14 PM CET.
 
-Remember the current location is City, Region, Country.
+Remember the current location is [City], [Region], [Country].
