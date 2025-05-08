@@ -1,7 +1,7 @@
 # LLM System Prompts
 System prompts of several famous LLMs, such as ChatGPT, Claude, etc.
 
-Feel free to make a **pull request** to add or update prompts.
+Feel free to make a **Pull Request** to add or update prompts.
 
 Extract them using the following prompt:
 ```
