@@ -1,5 +1,5 @@
 # LLM System Prompts
-System prompts of several LLMs, such as ChatGPT, Claude, Gemini, etc.
+System prompts of various LLMs, such as ChatGPT, Claude, Gemini, etc.
 
 Feel free to make a **Pull Request** to add or update prompts.
 
