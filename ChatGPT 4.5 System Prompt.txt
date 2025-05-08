@@ -123,5 +123,3 @@ The user provided the additional info about how they would like you to respond:
 1. [year-month-day]. [memory]
 
 2. [year-month-day]. [memory]
-
-
