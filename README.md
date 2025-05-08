@@ -22,4 +22,4 @@ Replace "<" with "[LESS_THAN]". Replace ">" with "[GREATER_THAN]". Replace "'" w
 
 > *I didn't make these prompts.*
 
-[compile_system_prompts.py](https://github.com/guy915/LLM-System-Prompts/blob/main/compile_system_prompts.py) will compile a .txt file of the system prompts.
+`[compile_system_prompts.py](https://github.com/guy915/LLM-System-Prompts/blob/main/compile_system_prompts.py)` will compile a .txt file of the system prompts.
