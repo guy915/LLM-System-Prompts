@@ -5,6 +5,8 @@ import sys
 import subprocess
 import platform
 
+# Outputs a complied .txt file of the system prompts
+
 def compile_system_prompts():
     try:
         # Get the directory where this script is located
