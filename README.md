@@ -1,4 +1,4 @@
-# LLM-System-Prompts
+# LLM System Prompts
 System prompts of several famous LLMs, such as ChatGPT, Claude, etc.
 
 Extract them using the following prompt:
