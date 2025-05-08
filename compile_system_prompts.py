@@ -63,7 +63,7 @@ def compile_system_prompts():
                     
                     # Add separator between prompts
                     if i > 0:
-                        output_file.write("\n\n---\n\n")
+                        output_file.write("\n---\n\n")
                     
                     # Write heading and content
                     output_file.write(f"# {file_name_without_ext}\n\n")
