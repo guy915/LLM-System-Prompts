@@ -5,7 +5,7 @@ import sys
 import subprocess
 import platform
 
-# Outputs a complied .txt file of the system prompts
+# Outputs a complied .md file of the system prompts
 
 def compile_system_prompts():
     try:
@@ -15,33 +15,38 @@ def compile_system_prompts():
             script_dir = os.getcwd()
         
         # Output file path
-        output_filename = "Collection of LLM System Prompts.txt"
+        output_filename = "LLM System Prompts.md"
         output_path = os.path.join(script_dir, output_filename)
         
-        # Find .txt files in the current directory
-        txt_files = glob.glob(os.path.join(script_dir, "*.txt"))
+        # Find .md files in the current directory
+        md_files = glob.glob(os.path.join(script_dir, "*.md"))
         
         # Remove the compilation file itself from the list if it exists
-        if output_path in txt_files:
-            txt_files.remove(output_path)
+        if output_path in md_files:
+            md_files.remove(output_path)
+
+        # Exclude README.md
+        readme_path = os.path.join(script_dir, "README.md")
+        if readme_path in md_files:
+            md_files.remove(readme_path)
         
-        if not txt_files:
-            print(f"No .txt files found in {script_dir}")
+        if not md_files:
+            print(f"No .md files found in {script_dir}")
             return
         
         # Sort files alphabetically
-        txt_files.sort()
+        md_files.sort()
         
         # Check if the output file already exists
         file_existed = os.path.exists(output_path)
         
-        print(f"\nFound {len(txt_files)} text files.\n{'Updating' if file_existed else 'Creating'} {output_path}\n")
+        print(f"\nFound {len(md_files)} markdown files.\n{'Updating' if file_existed else 'Creating'} {output_path}\n")
         
         # Create/update the output file and write content
         with open(output_path, "w", encoding="utf-8") as output_file:
             skipped_files = []
             
-            for i, file_path in enumerate(txt_files):
+            for i, file_path in enumerate(md_files):
                 try:
                     # Extract filename
                     file_name = os.path.basename(file_path)
