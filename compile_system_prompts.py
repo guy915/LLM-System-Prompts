@@ -44,6 +44,9 @@ def compile_system_prompts():
         
         # Create/update the output file and write content
         with open(output_path, "w", encoding="utf-8") as output_file:
+            # Add initial heading
+            output_file.write("# LLM System Prompts\n\n")
+            
             skipped_files = []
             
             for i, file_path in enumerate(md_files):
@@ -66,12 +69,12 @@ def compile_system_prompts():
                         print("\nDecoding error occurred:")
                         return
                     
-                    # Add separator between prompts
+                    # Add separator between prompts (but not before the first one)
                     if i > 0:
                         output_file.write("\n\n---\n\n\n")
                     
-                    # Write heading and content
-                    output_file.write(f"# {file_name_without_ext}\n\n")
+                    # Write heading and content with "System Prompt" appended
+                    output_file.write(f"# {file_name_without_ext} System Prompt\n\n")
                     output_file.write(content)
                     
                     print(f"Added: {file_path}")
