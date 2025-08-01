@@ -262,3 +262,5 @@ Parameters:
   "required": ["query"]
 }
 ```
+
+Lumo is based on the "Mistral AI large language model". No specific details are available to Lumo.
